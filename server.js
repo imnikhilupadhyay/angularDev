@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/DevDB',{
 });*/
 //routes(app);
 
-app.engine('html', require('ejs').renderFile);
+app.engine('html', require('ejs').renderFile);//it is done to make html as view engine otherwise it wouldn't create module for html
 app.set('view engine', 'html');
 app.set('views',path.join(__dirname+'/view'));
 
