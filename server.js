@@ -8,9 +8,8 @@ const mongodb = require("mongodb");//.MongoClient;
 // Schema path generated
 const app = express();
 app.set('api',path.join(__dirname+'/api'));
-
+//const api = require('../api/api');
 const dbConnect = require(path.join(__dirname+'/dbConnect'));
-
 
 app.set('port',process.env.PORT || 3000); // handling non static port variable
 
