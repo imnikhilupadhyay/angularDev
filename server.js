@@ -7,7 +7,7 @@ const path = require("path"); // find the root folder hence resolve path issues
 const mongodb = require("mongodb");//.MongoClient;
 // Schema path generated
 const app = express();
-const api = require(path.join(__dirname+'/api'));
+app.set('api',path.join(__dirname+'/api'));
 
 const dbConnect = require(path.join(__dirname+'/dbConnect'));
 
