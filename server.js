@@ -4,7 +4,7 @@ const bodyParser = require("body-parser"); // for getting info
 const http = require("http"); // for http
 const reload = require("reload"); // auto reload the web page
 const path = require("path"); // find the root folder hence resolve path issues
-const mongodb = require("mongodb");//.MongoClient;
+//const mongodb = require("mongodb");//.MongoClient;
 // Schema path generated
 const app = express();
 app.set('api',path.join(__dirname+'/api'));
