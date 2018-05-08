@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp',['ngRoute']);
 
-myApp.config(['$routeProvider', function($routeProvider){
+myApp.config(['$routeProvider','$locationProvider', function($routeProvider,$locationProvider){
   $routeProvider.
     when('/login',{
      templateUrl: 'view/login.html',
@@ -14,7 +14,12 @@ myApp.config(['$routeProvider', function($routeProvider){
      templateUrl: '/view/success.html',
      controller:'SuccessController'
     }).
+    when('/json',{
+      templateUrl:'/view/json.html'
+    }).
     otherwise({
       redirectTo:'/login'
     });
+
+    //$locationProvider.html5Mode(true);
 }])
